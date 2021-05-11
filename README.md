@@ -5,7 +5,7 @@ Boot, com isso precisei me aprofundar na JVM e em todos os seus recursos.
 Com base nessas pesquisas resolvi fazer um sintese reunindo toda a informação que consegui aprender
 sobre a JVM, tendo em vista em ajudar alguém que talvez possa estar passando pela mesma dificuldade.
 
-##JVM
+## JVM
 
 Antes de apronfundarmos em o que é a JVM, vamos entender um pouco de seu conceito.
 Quando a linguagem java foi criada em 1991 a sua ideia não era somente criar mais uma linguagem 
@@ -66,7 +66,7 @@ dentre as implementações mais importantes disponiveis no mercado possuimos:
   programação para o Lego Mindstorms RCX e NXT robots. 
 * Maxine — meta-circular open source research VM da Oracle Labs e a Universidade de Manchester.  
 
-##JDK x JRE (Melhorar tópico)
+## JDK x JRE (Melhorar tópico)
 
 JDK - Java Development Kit - utilizado pelo desenvolvedor para desenvolvimento de aplicações,
 possuindo a JVM dentro dele e algumas bibliotecas para auxiliar o desenvolvedor.
@@ -127,14 +127,14 @@ Java Stack armazena quadros. Ele contém variáveis locais e resultados parciais
 Cada encadeamento possui uma pilha JVM privada, criada ao mesmo tempo que encadeamento.
 Um novo quadro é criado toda vez que um método é chamado. Um quadro é destruído quando sua chamada de método é concluída.
 
-###Registro do contador de programa
+### Registro do contador de programa
 O registro do PC (contador de programa) contém o endereço da instrução da máquina virtual Java atualmente em execução.
 
-###Pilha de método nativo
+### Pilha de método nativo
 Ele contém todos os métodos nativos usados no aplicativo.
 
-###Interface nativa Java
+### Interface nativa Java
 Java Interface Nativa (JNI) é uma estrutura que fornece uma interface para se comunicar com outro aplicativo escrito em outra linguagem como C, C ++, Assembly etc. Java usa a estrutura JNI para enviar saída ao console ou interagir com as bibliotecas do sistema operacional.
 
 
-##Compilador JIT
+## Compilador JIT
