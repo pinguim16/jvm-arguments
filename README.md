@@ -77,7 +77,7 @@ a aplicação java.
 
 Para entendermos o funcionamento interno da JVM iremos repassar pelos pontos apresentados na imagem :
 
-<img src="/img/arquitetura_jvm.png" alt="Coesão" width="400" />
+<img src="/img/arquitetura_jvm1.png" alt="Coesão" width="400" />
 
 ### Classloader
 
