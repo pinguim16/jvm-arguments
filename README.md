@@ -138,3 +138,24 @@ Java Interface Nativa (JNI) é uma estrutura que fornece uma interface para se c
 
 
 ## Compilador JIT
+
+
+## Funcionamento JVM
+
+Como já vimos a principal função da JVM é executar os arquivos .class, que são os 
+arquivos compilados da JVM. Nesse ponto temos o class loader, carregando os arquivos e os 
+deixando disponível para que possam ser acessados, usando técnicas como lazy-loading
+e caching.
+Após as classes serem carregadas pelo class loader, deixando seus bytecodes disponiveis
+para acesso, o JIT (Just in Time) que processa o código para liguagem nativa e o processo é 
+ciclico pois uma de suas funções é otimizar o código para que cada vez seja executado mais rápido,
+mantendo-o na memória para acesso mais rápido.
+O processo se chama "execution engine" que pega todas e as armazena em memória fazendo o código funcionar.
+Uma das recomendações das mais importantes nesse ponto é sempre manter a versão mais atualizada possível,
+pois os algoritmos estão em constantes atualizações para melhorar ainda mais a otimização do código.
+E tudo praticamente se resume ao gereciamento de memoria pela JVM.
+
+### Gerenciamento de Memória
+Para entender o gereciamento de memória temos de falar sobre : "heap" e como o Garbage Collector atua.
+
+
